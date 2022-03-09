@@ -1,0 +1,12 @@
+// Служебные
+@import "normalize.scss";
+@import "variables.scss";
+@import "mixins.scss";
+@import "scaffolding.scss";
+
+// БЭМ-блоки
+@import "blocks/navigation.scss";
+@import "blocks/site-navigation.scss";
+@import "blocks/user-navigation.scss";
+@import "blocks/popover.scss";
+@import "blocks/search-form.scss";

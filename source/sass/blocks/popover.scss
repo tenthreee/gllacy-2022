@@ -1,0 +1,15 @@
+.popover {
+  position: absolute;
+  box-sizing: border-box;
+
+  background-color: $basic-extra-light;
+  border-radius: 4px;
+
+  &--search {
+    display: none;
+    top: 50px;
+    right: 0;
+    width: 356px;
+    padding: 20px;
+  }
+}

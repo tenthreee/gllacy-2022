@@ -1,0 +1,75 @@
+.user-navigation {
+  gap: 20px;
+}
+
+.user-navigation__item {
+  position: relative;
+}
+
+.user-navigation__link {
+  @include link;
+
+  position: relative;
+  padding-left: 45px;
+  padding-right: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  background-color: rgba($color: $basic-extra-light, $alpha: 0.3);
+  border: 2px solid transparent;
+  border-radius: 26px;
+
+  &::before {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    width: 15px;
+    height: 15px;
+
+    content: "";
+    transform: translateY(-50%);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+  }
+
+  &--search {
+    padding-right: 0;
+
+    &::before {
+      background-image: url("../img/icon-search.svg");
+    }
+  }
+
+  &--login::before {
+    background-image: url("../img/icon-login.svg");
+  }
+
+  &--cart::before {
+    background-image: url("../img/icon-cart.svg");
+  }
+
+  &--full-cart {
+    background-color: $basic-extra-light;
+
+    &::before {
+      background-image: url("../img/icon-cart-full.svg");
+    }
+  }
+
+  &:hover {
+    background-color: rgba($color: $basic-extra-light, $alpha: 0.5);
+  }
+
+  &:focus {
+    border-color: $basic-extra-dark;
+  }
+
+  &:active {
+    background-color: $basic-extra-light;
+    border-color: transparent;
+  }
+}
+
+.user-navigation__item--search:hover .user-navigation__popover {
+  display: block;
+}

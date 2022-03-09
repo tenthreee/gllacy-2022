@@ -1,0 +1,15 @@
+.search-form {
+  display: flex;
+}
+
+.search-form__field {
+  padding: 15px;
+  width: 100%;
+
+  font-family: $font-regular;
+  color: $basic-neutral;
+}
+
+.search-form__button {
+  display: none;
+}
