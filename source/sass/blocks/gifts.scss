@@ -1,0 +1,58 @@
+.gifts {
+  @include container;
+}
+
+.gifts__title {
+  @include title;
+
+  margin: 0;
+  margin-bottom: 55px;
+}
+
+.gifts__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.gifts__card {
+  box-sizing: border-box;
+
+  padding: 40px;
+  padding-right: 210px;
+  width: 570px;
+
+  background-color: $special-neutral;
+  border-radius: 16px;
+
+  &--berry {
+    background-image: url("../img/gift-berry.png");
+    background-repeat: no-repeat;
+    background-position: bottom right 15px;
+  }
+
+  &--marshmellow {
+    background-image: url("../img/gift-marshmellow.png");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+  }
+}
+
+.gifts__card-title {
+  margin: 0;
+  margin-bottom: 15px;
+
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.gifts__description {
+  margin: 0;
+  margin-bottom: 30px;
+
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.gifts__button {
+  display: inline-block;
+}

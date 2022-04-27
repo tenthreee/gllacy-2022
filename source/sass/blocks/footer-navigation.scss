@@ -1,0 +1,41 @@
+.footer-navigation {
+  display: flex;
+
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.footer-navigation__list {
+  @include list-unstyled;
+  margin-left: 25px;
+}
+
+.footer-navigation__item {
+  margin-bottom: 8px;
+}
+
+.footer-navigation__link {
+  @include link;
+  position: relative;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &--special {
+    font-weight: 700;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 1px;
+      left: -25px;
+
+      width: 14px;
+      height: 14px;
+
+      background-image: url("../img/icon-heart.svg");
+      background-repeat: no-repeat;
+    }
+  }
+}

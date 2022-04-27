@@ -1,0 +1,24 @@
+.controls {
+  @include list-unstyled;
+  display: flex;
+}
+
+.control {
+  margin-right: 8px;
+  padding: 0;
+
+  width: 12px;
+  height: 12px;
+
+  background-color: rgba($color: $basic-extra-light, $alpha: 0.3);
+  border: 2px solid transparent;
+  border-radius: 50%;
+
+  &--current {
+    background-color: $basic-extra-light;
+  }
+
+  &:hover {
+    border-color: $basic-extra-light;
+  }
+}

@@ -1,0 +1,36 @@
+.social__list {
+  @include list-unstyled;
+
+  display: flex;
+}
+
+.social__item:not(:last-of-type) {
+  margin-right: 15px;
+}
+
+.social__link {
+  display: block;
+
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+
+  &:hover {
+    background-color: $basic-extra-dark;
+  }
+
+  &--vk {
+    background-image: url("../img/icon-vk.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--fb {
+    background-image: url("../img/icon-fb.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--inst {
+    background-image: url("../img/icon-inst.svg");
+    background-repeat: no-repeat;
+  }
+}

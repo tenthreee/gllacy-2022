@@ -1,12 +1,13 @@
 @mixin container {
-  width: 1180px;
+  width: 1170px;
   margin: 0 auto;
   padding: 0 20px;
+  margin-top: 80px;
 }
 
 @mixin title () {
-  font-size: 48px;
-  line-height: 48px;
+  font-size: 32px;
+  line-height: 46px;
   text-align: center;
 }
 

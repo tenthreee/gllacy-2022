@@ -1,0 +1,70 @@
+.contacts {
+  @include container;
+}
+
+.contacts__wrapper {
+  box-sizing: border-box;
+  height: 492px;
+  padding: 65px;
+
+  border-radius: 16px;
+  background-image: url("../img/back-contacts.jpg");
+}
+
+.contacts__block {
+  width: 345px;
+  padding: 40px;
+  box-sizing: border-box;
+
+  border-radius: 8px;
+  background-color: $basic-white;
+}
+
+.contacts__text {
+  margin: 0;
+  margin-bottom: 10px;
+
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.contacts__address {
+  margin: 0;
+  margin-bottom: 25px;
+
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.contacts__phone {
+  margin: 0;
+
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.contacts__tel {
+  @include link;
+
+  display: block;
+  margin-top: 10px;
+
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+
+  &:hover {
+    opacity: 0.6;
+  }
+}
+
+.contacts__time {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.contacts__button {
+  margin-top: 30px;
+}

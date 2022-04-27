@@ -1,0 +1,31 @@
+.newsletter {
+  padding: 6px;
+  min-height: 220px;
+  box-sizing: border-box;
+
+  border-radius: 16px;
+  background-image: url("../img/back-newsletter.jpg");
+}
+
+.newsletter__wrapper {
+  padding: 25px;
+  border-radius: 16px;
+  background-color: $basic-white;
+}
+
+.newsletter__text {
+  margin: 0;
+  margin-bottom: 40px;
+
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.newsletter__form {
+  display: flex;
+}
+
+.newsletter__field {
+  margin-right: 25px;
+  flex-grow: 1;
+}

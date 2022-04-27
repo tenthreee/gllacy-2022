@@ -1,0 +1,24 @@
+.feedback__title {
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.feedback__form {
+  display: grid;
+  grid-template-rows: auto;
+  row-gap: 15px;
+}
+
+.feedback__form-group {
+  margin: 0;
+}
+
+.feedback__field {
+  width: 100%;
+  resize: vertical;
+}
+
+.feedback__button {
+  margin-top: 15px;
+  justify-self: right;
+}

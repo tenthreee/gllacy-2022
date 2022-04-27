@@ -1,0 +1,22 @@
+.slider {
+  @include container;
+
+  margin-top: 0;
+  position: relative;
+}
+
+.slider__list {
+  @include list-unstyled;
+}
+
+.slider__controls {
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+}
+
+.slider__social {
+  position: absolute;
+  bottom: 0;
+  right: 20px;
+}

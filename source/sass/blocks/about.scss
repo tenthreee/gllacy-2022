@@ -1,0 +1,59 @@
+.about {
+  @include container;
+}
+
+.about__waffle {
+  padding: 25px;
+
+  border-radius: 16px;
+  background-image: url("../img/back-waffle.jpg");
+}
+
+.about__wrapper {
+  padding: 55px 40px;
+  background-color: $basic-white;
+  border-radius: 16px;
+}
+
+.about__title {
+  @include title;
+
+  margin: 0;
+  margin-bottom: 55px;
+}
+
+.about__list {
+  @include list-unstyled;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 40px;
+}
+
+.about__item {
+  position: relative;
+  padding-left: 65px;
+
+  font-size: 16px;
+  line-height: 22px;
+
+  &--ice {
+    background-image: url("../img/icon-ice.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--leaf {
+    background-image: url("../img/icon-leaf.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--cow {
+    background-image: url("../img/icon-cow.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--thermo {
+    background-image: url("../img/icon-thermo.svg");
+    background-repeat: no-repeat;
+  }
+}

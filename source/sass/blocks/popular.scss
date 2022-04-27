@@ -1,0 +1,16 @@
+.popular {
+  @include container;
+}
+
+.popular__title {
+  @include title;
+  margin-bottom: 110px;
+}
+
+.popular__list {
+  @include list-unstyled;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}

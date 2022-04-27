@@ -1,0 +1,7 @@
+.promo {
+  @include container;
+
+  display: grid;
+  grid-template-columns: repeat(2, 570px);
+  column-gap: 30px;
+}

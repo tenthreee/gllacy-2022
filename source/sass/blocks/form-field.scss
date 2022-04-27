@@ -1,0 +1,43 @@
+.form-field {
+  padding: 15px;
+  box-sizing: border-box;
+
+  border: 1px solid $basic-neutral;
+  border-radius: 4px;
+
+  font-size: 16px;
+  line-height: 20px;
+  color: $basic-extra-dark;
+
+  &::placeholder {
+    color: $basic-neutral;
+  }
+
+  &:hover {
+    border-color: $basic-extra-dark;
+
+    &::placeholder {
+      color: $basic-extra-dark;
+    }
+  }
+
+  &:disabled {
+    background-color: $basic-neutral;
+
+    &::placeholder {
+      color: $basic-extra-dark;
+    }
+  }
+
+  &--error {
+    border: 1px solid $special-error;
+
+    &::placeholder {
+      color: $special-error;
+    }
+
+    &:hover {
+      border: 1px solid $special-error;
+    }
+  }
+}
