@@ -1,0 +1,24 @@
+.catalog__products {
+  padding-top: 50px;
+}
+
+.catalog__list {
+  @include list-unstyled;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 80px 30px;
+}
+
+.catalog__pagination {
+  margin-top: 60px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalog__show-more {
+  margin-right: 60px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}

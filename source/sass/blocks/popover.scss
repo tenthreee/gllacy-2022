@@ -20,7 +20,12 @@
     padding: 50px;
   }
 
-  &--basket-empty {
+  &--cart-full {
+    width: 441px;
+    padding: 50px;
+  }
+
+  &--cart-empty {
     width: 288px;
     padding: 50px;
   }
@@ -33,11 +38,12 @@
   line-height: 30px;
   font-weight: 700;
 
-  &--search {
+  &--search,
+  &--cart {
     margin-bottom: 30px;
   }
 
-  &--basket-empty {
+  &--cart-empty {
     text-align: center;
   }
 }

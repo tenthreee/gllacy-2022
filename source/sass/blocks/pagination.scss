@@ -1,0 +1,60 @@
+.pagination {
+  @include list-unstyled;
+  display: flex;
+  align-items: center;
+}
+
+.pagination__item:not(:last-of-type) {
+  margin-right: 20px
+}
+
+.pagination__link {
+  @include link;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    z-index: -1;
+
+    width: 24px;
+    height: 24px;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    border-radius: 50%;
+  }
+
+  &:hover::before {
+    border: 1px solid $basic-extra-light;
+    background-color: rgba($color: $basic-extra-light, $alpha: 0.3);
+  }
+
+  &--current::before {
+    background-color: $basic-extra-light;
+  }
+
+  &--disabled {
+    opacity: 0.2;
+  }
+
+  &--prev {
+    display: block;
+
+    width: 16px;
+    height: 16px;
+
+    background-image: url("../img/arrow-left-dark.svg");
+  }
+
+  &--next {
+    display: block;
+
+    width: 16px;
+    height: 16px;
+
+    background-image: url("../img/arrow-right-dark.svg");
+  }
+}

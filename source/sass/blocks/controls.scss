@@ -1,9 +1,9 @@
-.controls {
+.slider-controls {
   @include list-unstyled;
   display: flex;
 }
 
-.control {
+.slider-control {
   margin-right: 8px;
   padding: 0;
 

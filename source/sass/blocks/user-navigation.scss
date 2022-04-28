@@ -48,12 +48,12 @@
     background-image: url("../img/icon-cart.svg");
   }
 
-  &--full-cart {
-    background-color: $basic-extra-light;
-
-    &::before {
+  &--full-cart::before {
       background-image: url("../img/icon-cart-full.svg");
-    }
+  }
+
+  &--selected {
+    background-color: $basic-extra-light;
   }
 
   &:hover {

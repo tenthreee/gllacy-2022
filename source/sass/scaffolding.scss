@@ -73,6 +73,11 @@ img {
   flex-grow: 1; // for sticky-footer
 }
 
+.page-container {
+  @include container;
+  margin-top: 30px;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
