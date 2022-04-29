@@ -12,6 +12,8 @@
   flex-shrink: 0;
   margin-right: 30px;
 
+  transition: 0.3s;
+
   &:hover {
     opacity: 0.6;
   }
@@ -29,6 +31,7 @@
   margin-right: 30px;
 
   font-weight: 600;
+  transition: 0.3s;
 
   &:hover {
     opacity: 0.6;

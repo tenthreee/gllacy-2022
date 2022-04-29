@@ -1,6 +1,5 @@
 .social__list {
   @include list-unstyled;
-
   display: flex;
 }
 
@@ -10,10 +9,11 @@
 
 .social__link {
   display: block;
-
   width: 28px;
   height: 28px;
+
   border-radius: 50%;
+  transition: 0.3s;
 
   &:hover {
     background-color: $basic-extra-dark;

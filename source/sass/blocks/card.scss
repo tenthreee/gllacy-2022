@@ -1,8 +1,8 @@
 .card {
   position: relative;
+
   box-sizing: border-box;
   padding: 40px;
-
   width: 270px;
   min-height: 280px;
 
@@ -12,9 +12,9 @@
 
 .card__image {
   position: absolute;
-
   top: -55px;
   left: 50%;
+
   transform: translateX(-50%);
 }
 
@@ -52,8 +52,6 @@
 
 .card__button {
   display: inline-block;
-  cursor: pointer;
-
   width: 32px;
   height: 32px;
 
@@ -63,6 +61,9 @@
   background-image: url("../img/icon-cart-light.svg");
   background-repeat: no-repeat;
   background-position: center;
+
+  cursor: pointer;
+  transition: 0.3s;
 
   &:hover {
     background-color: $basic-white;

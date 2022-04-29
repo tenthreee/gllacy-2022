@@ -1,8 +1,10 @@
 .site-navigation__link {
   @include link;
   padding: 10px 15px;
+
   border: 2px solid transparent;
   border-radius: 26px;
+  transition: 0.3s;
 
   &:hover {
     background-color: rgba($color: $basic-extra-light, $alpha: 0.5);

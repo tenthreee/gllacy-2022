@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Gllacy Catalog</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body class="page page--pink">
@@ -138,14 +140,23 @@
           </fieldset>
 
           <fieldset class="catalog-filter__group">
-            <legend class="catalog-filter__name">Цена: 100 ₽ – 500 ₽</legend>
+            <legend class="catalog-filter__name">Цена:
+              <label>
+                <span class="visually-hidden">Минимальная цена</span>
+                <input class="catalog-filter__price" type="number" value="100" name="min-price">₽ –
+              </label>
+              <label>
+                <span class="visually-hidden">Максимальная цена</span>
+                <input class="catalog-filter__price" type="number" value="500" name="max-price">₽
+              </label>
+            </legend>
             <div class="catalog-filter__range range">
               <div class="range__scale">
                 <div class="range__bar" style="width: 56px; left: 40px;">
-                  <button class="range__toggle range__toggle--min">
+                  <button class="range__toggle range__toggle--min" type="button">
                     <span class="visually-hidden">Изменить минимальную цену</span>
                   </button>
-                  <button class="range__toggle range__toggle--max">
+                  <button class="range__toggle range__toggle--max" type="button">
                     <span class="visually-hidden">Изменить максимальную цену</span>
                   </button>
                 </div>
@@ -234,7 +245,7 @@
           <ul class="catalog__list">
             <li>
               <article class="card">
-                <img class="card__image" src="./img/ice-berry.png" alt="">
+                <img class="card__image" src="./img/ice-berry.png" alt="" width="168" height="168">
                 <h3 class="card__title">Малинка</h3>
                 <p class="card__description">Сливочное мороженое с малиновым джемом</p>
                 <div class="card__buy">
@@ -247,7 +258,7 @@
             </li>
             <li>
               <article class="card">
-                <img class="card__image" src="./img/ice-nuts.png" alt="">
+                <img class="card__image" src="./img/ice-nuts.png" alt="" width="168" height="168">
                 <h3 class="card__title">Фисташка</h3>
                 <p class="card__description">Фисташковый пломбир с кусочками шоколада</p>
                 <div class="card__buy">
@@ -260,7 +271,7 @@
             </li>
             <li>
               <article class="card">
-                <img class="card__image" src="./img/ice-jam.png" alt="">
+                <img class="card__image" src="./img/ice-jam.png" alt="" width="168" height="168">
                 <h3 class="card__title">Черника</h3>
                 <p class="card__description">Крем-брюле с черничным джемом</p>
                 <div class="card__buy">
@@ -273,7 +284,7 @@
             </li>
             <li>
               <article class="card">
-                <img class="card__image" src="./img/ice-bubble.png" alt="">
+                <img class="card__image" src="./img/ice-bubble.png" alt="" width="168" height="168">
                 <h3 class="card__title">Бабл-гам</h3>
                 <p class="card__description">Ванильный пломбир со сладкой посыпкой</p>
                 <div class="card__buy">
@@ -286,7 +297,7 @@
             </li>
             <li>
               <article class="card">
-                <img class="card__image" src="./img/ice-blackberry.png" alt="">
+                <img class="card__image" src="./img/ice-blackberry.png" alt="" width="168" height="168">
                 <h3 class="card__title">Ежевика</h3>
                 <p class="card__description">Сливочное мороженое с ежевичным джемом</p>
                 <div class="card__buy">
@@ -299,7 +310,7 @@
             </li>
             <li>
               <article class="card">
-                <img class="card__image" src="./img/ice-banana.png" alt="">
+                <img class="card__image" src="./img/ice-banana.png" alt="" width="168" height="168">
                 <h3 class="card__title">Банан</h3>
                 <p class="card__description">Сливочный пломбир с банановым вкусом</p>
                 <div class="card__buy">
@@ -312,7 +323,7 @@
             </li>
             <li>
               <article class="card">
-                <img class="card__image" src="./img/ice-choco.png" alt="">
+                <img class="card__image" src="./img/ice-choco.png" alt="" width="168" height="168">
                 <h3 class="card__title">Шоколадка</h3>
                 <p class="card__description">Классический шоколадный пломбир</p>
                 <div class="card__buy">
@@ -325,7 +336,7 @@
             </li>
             <li>
               <article class="card">
-                <img class="card__image" src="./img/ice-strawberry.png" alt="">
+                <img class="card__image" src="./img/ice-strawberry.png" alt="" width="168" height="168">
                 <h3 class="card__title">Клубничка</h3>
                 <p class="card__description">Сливочный пломбир с клубничным вкусом</p>
                 <div class="card__buy">
@@ -338,7 +349,7 @@
             </li>
             <li>
               <article class="card">
-                <img class="card__image" src="./img/ice-lemon.png" alt="">
+                <img class="card__image" src="./img/ice-lemon.png" alt="" width="168" height="168">
                 <h3 class="card__title">Лимон</h3>
                 <p class="card__description">Освежающий лимонный сорбет</p>
                 <div class="card__buy">
@@ -351,7 +362,7 @@
             </li>
             <li>
               <article class="card">
-                <img class="card__image" src="./img/ice-mint.png" alt="">
+                <img class="card__image" src="./img/ice-mint.png" alt="" width="168" height="168">
                 <h3 class="card__title">Ментол</h3>
                 <p class="card__description">Сливочный пломбир с ментоловым сиропом</p>
                 <div class="card__buy">
@@ -364,7 +375,7 @@
             </li>
             <li>
               <article class="card">
-                <img class="card__image" src="./img/ice-choconut.png" alt="">
+                <img class="card__image" src="./img/ice-choconut.png" alt="" width="168" height="168">
                 <h3 class="card__title">Орешек</h3>
                 <p class="card__description">Фисташковый пломбир с шоколадным сиропом</p>
                 <div class="card__buy">
@@ -377,7 +388,7 @@
             </li>
             <li>
               <article class="card">
-                <img class="card__image" src="./img/ice-brule.png" alt="">
+                <img class="card__image" src="./img/ice-brule.png" alt="" width="168" height="168">
                 <h3 class="card__title">Крем-брюле</h3>
                 <p class="card__description">Классическое крем-брюле </p>
                 <div class="card__buy">
@@ -391,7 +402,7 @@
           </ul>
 
           <div class="catalog__pagination">
-            <button class="catalog__show-more button">Показать ещё</button>
+            <button class="catalog__show-more button" type="button">Показать ещё</button>
             <ul class="pagination">
               <li class="pagination__item">
                 <a href="" class="pagination__link pagination__link--prev pagination__link--disabled">
@@ -471,7 +482,7 @@
       <a class="footer-copyright__logo" href="https://htmlacademy.ru/">
         <span class="visually-hidden">.html academy</span>
       </a>
-      <p class="footer-copyright__text">Сделано в <a href="">.html academy</a> © 2021</p>
+      <p class="footer-copyright__text">Сделано в <a href="https://htmlacademy.ru/">.html academy</a> © 2021</p>
     </section>
   </footer>
 </body>

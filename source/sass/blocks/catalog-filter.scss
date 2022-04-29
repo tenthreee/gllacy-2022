@@ -1,6 +1,5 @@
 .catalog-filter {
   margin-bottom: 50px;
-
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -12,10 +11,10 @@
 .catalog-filter__group {
   margin: 0;
   padding: 0;
-  border: none;
-
   margin-bottom: 15px;
   margin-right: 25px;
+
+  border: none;
 
   &:last-of-type {
     margin-bottom: 0;
@@ -32,8 +31,29 @@
 
   border: none;
   border-radius: 20px;
-  border-right: 10px solid transparent; // move arrow to the left
   background-color: rgba($color: $basic-extra-light, $alpha: 0.3);
+  background-image: url("../img/arrow-down.svg");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+
+  appearance: none;
+}
+
+.catalog-filter__price {
+  padding: 0;
+  width: 35px;
+
+  text-align: center;
+
+  border: none;
+  background-color: transparent;
+  appearance: textfield;
+
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    appearance: none;
+    margin: 0;
+  }
 }
 
 .catalog-filter__list {
@@ -60,18 +80,17 @@
 }
 
 .filter-control__mark {
-  box-sizing: border-box;
   position: absolute;
-
   left: 0;
   top: 50%;
-  transform: translateY(-50%);
 
   width: 16px;
   height: 16px;
+  box-sizing: border-box;
 
   border: 2px solid $basic-extra-dark;
   border-radius: 2px;
+  transform: translateY(-50%);
 
   &--radio {
     border-radius: 50%;
@@ -79,27 +98,27 @@
 }
 
 .filter-control__input[type="radio"]:checked + .filter-control__mark::before {
-  position: absolute;
   content: "";
 
+  position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
 
   width: 6px;
   height: 6px;
 
   border-radius: 50%;
   background-color: $basic-extra-dark;
+  transform: translate(-50%, -50%);
 }
 
 .filter-control__input[type="checkbox"]:checked + .filter-control__mark {
   border: none;
 
   &::before {
-    position: absolute;
     content: "";
 
+    position: absolute;
     top: 0;
     left: 0;
 
@@ -114,7 +133,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
   width: 196px;
   height: 36px;
 
@@ -133,37 +151,35 @@
 
 .range__bar {
   position: absolute;
-
   height: 2px;
+
   background-color: $basic-extra-dark;
 }
 
 .range__toggle {
   position: absolute;
+  top: -6px;
 
   width: 16px;
   height: 16px;
-
-  top: -6px;
 
   border: none;
   border-radius: 50%;
   background-color: $basic-extra-dark;
 
   &::after {
-    position: absolute;
     content: "";
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
 
     width: 4px;
     height: 4px;
 
-    top: 50%;
-    left: 50%;
-
-    transform: translate(-50%, -50%);
-
     border-radius: 50%;
     background-color: $basic-extra-light;
+    transform: translate(-50%, -50%);
   }
 
   &--max {

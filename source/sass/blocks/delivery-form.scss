@@ -1,10 +1,8 @@
 .delivery-form {
   display: flex;
   flex-direction: column;
-
   box-sizing: border-box;
   padding: 40px;
-
   width: 500px;
   min-height: 405px;
 
@@ -46,6 +44,7 @@
 
 .delivery-form__info {
   position: absolute;
+
   margin-top: 3px;
   margin-left: 5px;
 }

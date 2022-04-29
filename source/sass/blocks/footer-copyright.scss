@@ -1,11 +1,11 @@
 .footer-copyright__logo {
   display: block;
   margin-bottom: 15px;
-
   width: 93px;
   height: 27px;
 
   background-image: url("../img/logo-htmlacademy.svg");
+  transition: 0.3s;
 
   &:hover {
     opacity: 0.6;

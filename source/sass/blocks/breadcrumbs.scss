@@ -8,22 +8,23 @@
   padding-right: 30px;
 
   &::after {
-    position: absolute;
     content: "";
+
+    position: absolute;
+    top: 50%;
+    right: 8px;
 
     width: 12px;
     height: 12px;
 
-    top: 50%;
-    right: 8px;
-    transform: translateY(-50%);
-
     background-image: url("../img/icon-chevrons-right.svg");
+    transform: translateY(-50%);
   }
 }
 
 .breadcrumbs__link {
   color: $basic-extra-dark;
+  transition: 0.3s;
 
   &:hover {
     opacity: 0.6;
