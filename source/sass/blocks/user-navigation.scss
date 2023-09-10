@@ -4,6 +4,12 @@
 
 .user-navigation__item {
   position: relative;
+
+  &--search:hover .popover--search,
+  &--search:focus-within .popover--search {
+    opacity: 1;
+    transform: translate3d(0,0,0);
+  }
 }
 
 .user-navigation__link {
